@@ -1,0 +1,162 @@
+.carta {
+  width: 100px;
+  min-width: width 6px;
+}
+
+.mini {
+  width: 40px;
+  margin: 10px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: table;
+  font-size: .8em;
+  color: #000;
+}
+
+.modal .modal-container {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.modal .modal-body {
+  display: inline-block;
+  /*margin:0px auto;*/
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  width: 90%;
+  max-width: 300px;
+  text-align: right;
+  border-radius: 5px;
+}
+
+.modal .modal-body span {
+  width: 100px;
+}
+
+.modal .modal-body input, .modal .modal-body select {
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  max-width: 200px;
+  color: #888;
+}
+
+.modal .modal-body input[type='number'] {
+  text-align: right;
+  max-width: 65px;
+}
+
+.modal .modal-title {
+  background: #ccc;
+}
+
+.modal-hidden {
+  display: none;
+}
+
+.modal-blur {
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);
+  filter: blur(8px);
+}
+
+@font-face {
+  font-family: "goldman-regular";
+  src: url("../fonts/Goldman-Regular.ttf");
+}
+
+body {
+  background-color: #436e20;
+  font-family: "goldman-regular";
+  color: white;
+}
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+}
+
+header form {
+  width: 100%;
+  text-align: right;
+}
+
+header a, header a:hover {
+  color: #F3D94E;
+  margin-left: 10px;
+}
+
+main {
+  position: relative;
+  margin-top: 80px;
+}
+
+aside {
+  position: fixed;
+  top: 100px;
+  left: 0px;
+}
+
+aside ul > li {
+  position: relative;
+  margin: 1px 0px 0px -40px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  background: #000;
+  width: 20px;
+}
+
+aside ul > li:hover {
+  background: #F3D94E;
+  color: #000;
+  width: 25px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #F3D94E;
+  color: #000;
+  border-color: #ffdb3a;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+  background-color: #e0c84e;
+  border-color: #ffdb3a;
+  color: #000;
+}
+
+.navbar-dark {
+  background-color: #000;
+  border-bottom: 5px solid #F3D94E;
+}
+
+.container {
+  padding: 10px;
+}
+
+.container .left {
+  padding: 10px;
+  text-align: right;
+}
+
+.container .right {
+  padding: 10px;
+  text-align: left;
+}
+
+.container .jugada {
+  padding-left: 20px;
+}
