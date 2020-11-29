@@ -33,7 +33,6 @@ function sacarCarta(){
 }
 
 function comprobarJugada(){
-    //let puntos=jugada.reduce((a,b)=>a+Number(b.valor))
     let puntos=jugada.map(c=>c.valor).reduce((a,b) => a+b)
     if(puntos==21)
         mostrarResultado("GANADOR")
