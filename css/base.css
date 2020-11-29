@@ -126,17 +126,22 @@ aside ul > li:hover {
   cursor: pointer;
 }
 
+.btn{
+  margin:10px;
+}
+
 .btn-primary {
   background-color: #F3D94E;
   color: #000;
   border-color: #ffdb3a;
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+.btn-primary:hover, .btn-primary:active, .btn-primary:disabled, .btn-primary:focus {
   background-color: #e0c84e;
   border-color: #ffdb3a;
   color: #000;
 }
+
 
 .navbar-dark {
   background-color: #000;
