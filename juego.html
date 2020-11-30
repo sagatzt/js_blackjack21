@@ -12,31 +12,56 @@
 </head>
 
 <body>
+  <!-- CABECERA DEL EJERCICIO -->
+  <header class="header align-middle justify-content-center">
+    <nav class="navbar navbar-dark navbar-expand-sm">
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+        Black-Jack 21
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">      
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Reiniciar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <!-- CUERPO DEL EJERCICIO, RESULTADOS, TARJETAS -->
   <main>
     <div class="container">
+      <div class="row">
+        <div class="col-6 left">
+          <img src="images/baraja/trasera.svg" id="baraja" class="carta">
+        </div>
+        <div class="col-6 right">
+          <img src="" id="carta" class="carta">
+        </div>
+        <div class="col-12 d-flex justify-content-center">
+          <button class="btn btn-danger" id="btnMePlanto">Me planto</button>
+          <button class="btn btn-primary" id="btnSacarCarta">Sacar carta</button>
+        </div>
+      </div>
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
           <label>Puntos: <label id="puntos"></label></label>
         </div>
         <div class="col-12 jugada-cartas"></div>
       </div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-6 left">
-          <img src="./images/baraja/trasera.svg" id="baraja" class="carta">
-        </div>
-        <div class="col-6 right">
-          <img src="" id="carta" class="carta">
-        </div>        
-      </div>
-      <div class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <button class="btn btn-danger" id="btnMePlanto">Me planto</button>
-          <button class="btn btn-primary" id="btnSacarCarta">Otra carta</button>
-        </div>
-      </div>      
     </div>
   </main>
+
+  <!-- ALERT MENSAJES EMERGENTES -->
+  <div class="row d-flex justify-content-center">
+    <div class="col-9 alert alert-warning alert-dismissable">
+      <button type="button" class="close">&times;</button>
+      <div class="texto"></div>
+    </div>
+  </div>
 
 
   <!-- VENTANA MODAL -->
